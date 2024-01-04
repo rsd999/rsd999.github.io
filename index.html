@@ -1,33 +1,689 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dasmoto's Arts & Crafts</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <title>RSD Cheat Sheet</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Dasmoto's Arts & Crafts</h1>
+  <header>
+    <h2>RSD-Cheatsheet<h2>
+    <div id="search-container">
+        <!-- Search form -->
+        <form action="/search" method="get">
+            <input type="text" id="search-bar" name="search" placeholder="Search...">
+            <button type="submit" id="search-button">Search</button>
+        </form>
     </div>
-    <div class="brushes">
-        <p><h2>Brushes</h2></p>
-        <img src="./images/hacksaw.jpeg" alt="hacksaw">
-        <p><b>Hacksaw Brushes</b></p>
-        <p>Made of the highest quality oak, Hacksaw brushes are known for their weight and ability to hold paint in large amounts. Available in different sizes. <b id="blue">Starting at $3.00 / brush</b>.</p>
+  </header>
+   <div id="list-container">
+    <ul class="horizontal-list">
+      <li><span><a href="#html">HTML</a></span></li>
+      <li><span><a href="#CSS">CSS</a></span></li>
+      <li><span><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></span></li>
+      <li><span><a href="https://147colors.com/" target="_blank">Color Codes</a></span></li>
+      <li><span><a href="https://validator.w3.org/" target="_blank">Error Identifier Online</a></span></li>
+      <li><span><a href="https://chat.openai.com/" target="_blank">Chat-GPT Help</a></span></li>
+      <li><span>About Us</span></li>
+      <li><span>Contact Us</span></li>
+    </ul> 
+  </div>
+
+  <div class="content-container">
+  <h1>Welcome to RSD-Cheatsheet - A sheet for future websites buildup</h1>
+  <p id="banner-ds">
+    In this project i am going to discuss about the tags used for website buildup, i will try my best to explain all the tags in details.</p>
+    <img src="https://images.pexels.com/photos/172276/pexels-photo-172276.jpeg" id="banner-image">
     </div>
-    <div class="frames">
-        <p><h2>Frames</h2></p>
-        <img src="./images/frames.jpeg" alt="frames">
-        <p><b>Art Frames (assorted)</b></p>
-        <p>Assorted frames made of different material, including MDF, birchwood, and PDE. Select frames can be sanded and painted according to your needs. <b id="blue">Starting at $2.00 / frame</b>.</p>
-    </div>
-    <div class="paint">
-        <p><h2>Paint</h2></p>
-        <img src="./images/finnish.jpeg" alt="paint">
-        <p><b>Clean Finnish Paint</b></p>
-        <p>Imported paint from Finland. Over 256 colors available in-store, varying in quantity (1 oz. to 8 oz.). Clean Finnish paint microbinds to canvas, increasing the finish and longevity of any artwork. <b id="blue">Starting at $5.00 / tube.</b>.</p>
-    </div>
+    <hr>
+<table style="width: 100%;">
+    <tr>
+      <!-- Left Column -->
+      <td style="width: 50%; vertical-align: top;">
+  <div class="html">
+    <h2>HTML</h2>
+    <p> HTML- HyperText Markup Language</p>
+    <p> Basic HTML Tags and usage</p>
+  <table>
+    <div style="height:100%; width: 2px; background-color: #000;"></div>
+    <thead>
+      <tr>
+        <th>TAG</th>
+        <th>DISCRIPTION</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+            <span class="code">&lt;!DOCTYPE html&gt;</span>
+          </td>
+          <td>Declaration specifying the HTML version.</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;html&gt;</span>
+          </td>
+          <td>The root element of an HTML page..</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;head&gt;</span>
+          </td>
+          <td>Contains meta-information about the HTML document.</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;body&gt;</span>
+          </td>
+          <td>Contains the content of the HTML document</td>
+        </tr>
+          <tr>
+          <td>
+            <span class="code">&lt;title&gt;</span>
+          </td>
+          <td>For adding title on the browser title bar.</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;h1&gt; to &lt;h6&gt;</span>
+          </td>
+          <td>Headings, where &lt;h1&gt; is the largest and &lt;h6&gt; is the smallest.</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;p&gt;</span>
+          </td>
+          <td>Paragraph: for adding paragraph text</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;a&gt;</span>
+          </td>
+          <td>Anchor for creating hyperlinks.</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">href</span>
+          </td>
+          <td>Attribute specifying the URL</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;img&gt;</span>
+          </td>
+          <td>Image: for adding image</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">src</span>
+          </td>
+          <td>Attribute specifying the image source.</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">alt</span>
+          </td>
+          <td>Attribute specifying alternative text for the image.</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;ul&gt;</span>
+          </td>
+          <td>Unordered list.</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;li&gt;</span>
+          </td>
+          <td>List item within an unordered or ordered list.</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;ol&gt;</span>
+          </td>
+          <td>Ordered list.</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;br&gt;</span>
+          </td>
+          <td>Line break.</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;hr&gt;</span>
+          </td>
+          <td>Horizontal rule: for making horizontal line on webpage</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;strong&gt;</span>
+          </td>
+          <td> Strong importance (typically bold) for making text bold</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;em&gt;</span>
+          </td>
+          <td> Emphasis (typically italic). for making text Italic</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;span&gt;</span>
+          </td>
+          <td> Inline container for styling</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;div&gt;</span>
+          </td>
+          <td> Block-level container for styling and layout.</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;input&gt;</span>
+          </td>
+          <td> Input field for forms.</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">type</span>
+          </td>
+          <td> Attribute specifying the type of input (text, checkbox, radio, etc.).</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">value</span>
+          </td>
+          <td> Attribute specifying the initial value..</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;textarea&gt;</span>
+          </td>
+          <td>Multiline text input for forms.</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;form&gt;</span>
+          </td>
+          <td> Form container</td>
+        </tr>
+         <tr>
+          <td>
+            <span class="code">action</span>
+          </td>
+          <td> Attribute specifying where the form data should be sent.</td>
+        </tr>
+         <tr>
+          <td>
+            <span class="code">method</span>
+          </td>
+          <td>Attribute specifying the HTTP method for sending form data (e.g., "get" or "post").</td>
+        </tr>
+         <tr>
+          <td>
+            <span class="code">&lt;select&gt;</span>
+          </td>
+          <td> Dropdown menu for forms.</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">&lt;option&gt;</span>
+          </td>
+          <td>  Option within a &lt;select&gt;</td>
+        </tr>
+    </tbody>
+  </table>
+       
+      </td>
+       
+  </div>
+
+
+      
+<!-- Divider Line -->
+
+      <td style="width: 2px; background-color: #000;"></td>
+
+      <!-- Right Column -->
+      <td style="width: 50%; vertical-align: top;">
+        <!-- Your right column content goes here -->
+        <div class="html">
+        <h2>CSS</h2>
+        <p>CSS stands for Cascading Style Sheets. It is a style sheet language used for describing the look and formatting of a document written in a markup language like HTML.</p>
+        <p> Basic CSS Tags and usage</p>
+        <!-- Include your existing table here -->
+        <table>
+          <table>
+    <div style="height:100%; width: 2px; background-color: #000;"></div>
+    <thead>
+      <tr>
+        <th>TAG</th>
+        <th>DISCRIPTION</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+            <span class="code">Body:</span>
+          </td>
+          <td>body{ /* Styles for the entire document body */
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">Headings (h1, h2, h3, etc.):</span>
+          </td>
+          <td>h1 {
+  /* Styles for the first-level heading */
+  color: #333;
+}<br>
+
+h2 {
+  /* Styles for the second-level heading */
+  color: #555;
+}<br>
+
+/* Add styles for other heading levels as needed */</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">Paragraphs (p):</span>
+          </td>
+          <td>p {
+  /* Styles for paragraphs */
+  line-height: 1.5;
+  margin-bottom: 10px;
+}</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">Links (a):</span>
+          </td>
+          <td>a {
+  /* Styles for links */
+  color: #0066cc;
+  text-decoration: none;
+}<br>         
+a:hover {
+  /* Styles for links on hover */
+  text-decoration: underline;
+}
+        </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">Lists (ul, ol, li):</span>
+          </td>
+          <td>ul, ol {
+  /* Styles for unordered and ordered lists */
+  margin-left: 20px;
+}<br>
+
+li {
+  /* Styles for list items */
+  list-style-type: disc; /* or 'circle', 'square', etc. */
+}       
+
+        </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">Images (img):</span>
+          </td>
+          <td>img {
+  /* Styles for images */
+  max-width: 100%;
+  height: auto;
+}
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Divs and Spans:</span>
+          </td>
+          <td>.container {
+  /* Styles for a class named 'container' */
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+<br>
+#uniqueElement {
+  /* Styles for an element with the ID 'uniqueElement' */
+  color: #ff0000;
+}
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Color Property:</span>
+          </td>
+          <td>"The color property sets the text color" <br>p {
+  color: #333; /* Hex color code */
+}
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Background Color:</span>
+          </td>
+          <td>The background-color property sets the background color of an element.<br>
+            body {
+  background-color: #f0f0f0; /* Hex color code */
+}
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Border Color:</span>
+          </td>
+          <td>The border-color property sets the color of the borders.<br>
+            div {
+  border: 1px solid #999; /* Hex color code */
+}
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Opacity:</span>
+          </td>
+          <td>The opacity property controls the transparency of an element.<br>
+            .transparent-box {
+  background-color: #aabbcc;
+  opacity: 0.8; /* Ranges from 0 (fully transparent) to 1 (fully opaque) */
+}
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">RGBA Color:</span>
+          </td>
+          <td>The rgba function allows you to specify a color using red, green, blue, and alpha (transparency) values.<br>
+            h2 {
+  color: rgba(255, 0, 0, 0.7); /* Red color with 70% transparency */
+}
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">HSL Color:</span>
+          </td>
+          <td>The hsl function allows you to specify a color using hue, saturation, and lightness values.<br>
+            a {
+  color: hsl(120, 100%, 50%); /* Green color */
+}
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Text Shadow:</span>
+          </td>
+          <td>The text-shadow property adds a shadow to text.<br>
+            h1 {
+  text-shadow: 2px 2px 4px #666; /* Horizontal offset, vertical offset, blur radius, color */
+}
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Box Shadow:</span>
+          </td>
+          <td>The box-shadow property adds a shadow to an element.<br>
+            div {
+  box-shadow: 3px 3px 5px #888; /* Horizontal offset, vertical offset, blur radius, color */
+}
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Font Family:</span>
+          </td>
+          <td>The font-family property defines the font to be used for text.<br>
+          body {
+          font-family: "Arial", sans-serif;
+          }
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Font Size:</span>
+          </td>
+          <td>The font-size property sets the size of the text.<br>
+          p {
+          font-size: 16px;
+          }
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Font Weight:</span>
+          </td>
+          <td>The font-weight property sets the thickness of the characters.<br>
+          strong {
+          font-weight: bold;
+          }
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Font Style:</span>
+          </td>
+          <td>The font-style property sets whether the text is italic or normal.<br>
+          em {
+          font-style: italic;
+          }
+          </td>
+          </tr>
+           <tr>
+          <td>
+            <span class="code">Text Decoration:</span>
+          </td>
+          <td>The text-decoration property controls underlining, overlining, and striking through text.<br>
+          a {
+          text-decoration: none; /* No underline */
+          }<br>
+
+          .underline {
+          text-decoration: underline;
+          }
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Text Transform:</span>
+          </td>
+          <td>The text-transform property controls the capitalization of text.<br>
+          h1 {
+          text-transform: uppercase;
+          }
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Line Height:</span>
+          </td>
+          <td>The line-height property sets the height of a line of text.<br>
+          p {
+          line-height: 1.5;
+          }
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Letter Spacing:</span>
+          </td>
+          <td>The letter-spacing property controls the space between characters.<br>
+          h2 {
+          letter-spacing: 2px;
+          }
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Text Align:</span>
+          </td>
+          <td>The text-align property sets the horizontal alignment of text.<br>
+          div {
+          text-align: center;
+          }
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Display Property:</span>
+          </td>
+          <td>display: block;: Makes an element a block-level element, taking up the full width available.<br>
+          display: inline;: Makes an element an inline-level element, allowing other elements to sit beside it.<br>
+          display: inline-block;: Combines features of both block and inline elements.<br>
+          
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Position Property:</span>
+          </td>
+          <td>position: static;: Default value. Elements are positioned according to the normal flow of the document.<br>
+          position: relative;: Positioned relative to its normal position.<br>
+          position: absolute;: Positioned absolute to its first positioned (not static) ancestor element.<br>
+          position: fixed;: Positioned relative to the browser window.<br>
+          position: sticky;: Acts like relative within its container until it crosses a specified point, then it is treated as fixed<br>
+          
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Flexbox:</span>
+          </td>
+          <td>Flexbox is a one-dimensional layout method for laying out items in rows or columns. It's great for distributing space along a single axis.<br>
+          display: flex;<br>
+          flex-direction: row | column;<br>
+          justify-content: flex-start | flex-end | center | space-between | space-around;<br>
+          align-items: stretch | flex-start | flex-end | center | baseline;<br>
+          
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Grid:</span>
+          </td>
+          <td>Grid is a two-dimensional layout method, providing both row and column-based layout capabilities.<br>
+          display: grid;<br>
+          grid-template-rows: auto | 1fr;<br>
+          grid-template-columns: auto | 1fr;<br>
+          grid-gap: 1em;<br>
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Float Property:</span>
+          </td>
+          <td>float: left; or float: right;: Elements are shifted to the left or right, allowing text and inline elements to wrap around them. (Note: Flexbox and Grid are generally preferred over float for layout purposes in modern CSS.)<br>
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Box Model:</span>
+          </td>
+          <td>margin, padding, border: Properties for controlling the spacing and borders around elements.<br>
+          margin: 10px;<br>
+          padding: 10px;<br>
+          border: 1px solid #000;<br>
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <span class="code">Responsive Design:</span>
+          </td>
+          <td>Media queries are often used for creating responsive layouts that adapt to different screen sizes.<br>
+          @media (max-width: 600px) {
+          /* CSS rules for screens smaller than 600px */}<br>
+          </td>
+          </tr>
+        
+        </table>
+      </td>
+    </tr>
+  </table>
+
+<hr>
+<div class="usage-tags">
+  <h3> Usage of Tags with Examples</h3>
+  <p> HTML & CSS</p>
+  </div>
+  <div>
+  <p id="para-head">"Giving Title to Browser Title Bar"</p>
+  <p>To give a title to the browser title bar in an HTML document, you need to use the &lt;title&gt element within the &lt;head&gt section of your HTML document. The text you put inside the &lt;title&gt element will be displayed on the title bar of the browser.</p>
+  <pre id="pre-tag">
+    &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Your Page Title Here&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Your page content goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>
+  <hr>
+  <div>
+  <p id="para-head">"To add an image to a website"</p>
+  <p>To add an image to a website, you can use the &lt;img&gt(image) tag in HTML. The &lt;img&gt tag is a self-closing tag, meaning it doesn't have a closing tag. It includes the src attribute, which specifies the URL (file path) of the image, and optionally, you can include attributes such as alt for alternative text, width and height to define the dimensions, and more.</p>
+  <pre id="pre-tag">
+    &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Image Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;!-- Adding an image to the website --&gt;
+    &lt;img src="path/to/your/image.jpg" alt="Description of the image" width="300" height="200" style="border: 1px solid #ddd;"&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>
+  <hr>
+  <div>
+  <p id="para-head">"To add an video to a website"</p>
+  <p>You can use the HTML5 &lt;video&gt element to embed a video in your HTML document and provide controls using the controls attribute. Here's a simple example:</p>
+  <pre id="pre-tag">
+    &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Video with Controls&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Video Example&lt;/h1&gt;
+
+&lt;video width="640" height="360" controls&gt;
+    &lt;source src="your-video-file.mp4" type="video/mp4"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>
+  <hr>
+  </div>
+  
     
+
+
+
+
+
+
+
 </body>
-</html>
+
+</html>  
